@@ -10,11 +10,11 @@ public class PlayerController : MonoBehaviour
     private float runVariable;
     public bool isTalking = false;
     private bool canMove = true;
-
+    /*
     //Game bounds (get rid of later)
     public float xRange = 10;
     public float yRange = 10;
-
+*/
     //Controls
     public float horizontalInput;
     public float verticalInput;
@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
         {
             runVariable = 1f;
         }
-
+        /*
         //Game bounds (get rid of later)
         if (transform.position.x < -xRange)
         {
@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, yRange, transform.position.z);
         }
-
+        */
         if (isTalking)
         {
             canMove = false;
